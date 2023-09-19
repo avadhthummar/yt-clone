@@ -11,15 +11,50 @@ body{
 
 .logo{
     height: 20px;
-    
+}
+
+#logo sup{
+    font-size: 10px;
+    color: rgb(160, 157, 157);
+    position: absolute;
+    margin-left: 5px;
+    margin-right: 10px;
 }
 
 header{
     display: flex;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-left: 20px;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+}
+
+.menu_logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu{
+    margin-right: 15px;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    position: relative;
+    
+}
+
+.menu span{
+    color: rgb(197, 190, 190);
+    font-size: 26px;
+    position: absolute;
+    top: 19%;
+    left: 18%;
+    
+}
+
+.menu:hover{
+    background-color: rgba(44, 42, 42, 1.0);
+    border-radius: 50%;
 }
 
 .sticky{
@@ -29,18 +64,110 @@ header{
     width: 100%;
     background-color: black;
 
-
 }
-.search{
-    height: 30px;
-    width: 500px;
+
+.searchbar{
+    display: flex;
+    align-items: center;
+}
+.input_search{
+    height: 40px;
+    width: 536px;
     margin-left: 10px;
     border-radius: 40px 0 0 40px;
     font-size: 15px;
     padding-left: 10px;
     border:1px solid hsl(0, 0%, 18.82%);
-    background-color: #121212;
+    background-color: rgba(44, 42, 42, 0.3);
+    color: white;
 }
+
+.search_icon{
+    
+    background-color: rgba(44, 42, 42, 0.6);
+    height: 40px;
+    width: 64px;
+    margin-left: 1px;
+    border:1px solid hsl(0, 0%, 18.82%);
+    border-radius: 0 40px 40px 0;
+    cursor: pointer;
+    position: relative;
+}
+
+.search_icon span{
+    position: absolute;
+    color: white;
+    top: 25%;
+    left: 24%;
+   
+}
+
+.voice{
+    background-color: rgba(44, 42, 42, 0.6);
+    border-radius: 50%;
+    padding: 5px;
+    height: 36px;
+    width: 36px;
+    position: relative;
+    cursor: pointer;
+    margin-left: 10px;
+    
+}
+
+.voice span{
+    color: white;
+    position: absolute;
+    top: 24%;
+    left: 24%;
+}
+
+.voice:hover{
+    background-color: rgba(44, 42, 42, 1.0);
+
+}
+
+.create_video{
+    margin-right: 15px;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    position: relative;
+}
+
+.create_video span{
+    color: rgb(197, 190, 190);
+    font-size: 26px;
+    position: absolute;
+    top: 19%;
+    left: 18%;
+}
+
+.create_video:hover{
+    background-color: rgba(44, 42, 42, 1.0);
+    border-radius: 50%;
+}
+
+.notifications{
+    margin-right: 15px;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    position: relative;
+}
+
+.notifications span{
+    color: rgb(197, 190, 190);
+    font-size: 26px;
+    position: absolute;
+    top: 19%;
+    left: 18%;
+}
+
+.notifications:hover{
+    background-color: rgba(44, 42, 42, 1.0);
+    border-radius: 50%;
+}
+
 
 
 .nav-sidebar{
@@ -69,12 +196,12 @@ header{
     text-decoration: none;
     border: 1px solid none;
     border-radius: 7px;
-    padding: 5px;
-    background-color: rgb(44, 42, 42);
+    padding: 7px;
+    background-color: rgba(44, 42, 42, 0.6);
 }
 
 .nav-option:hover{
-    background-color:rgb(66, 63, 63);
+    background-color: rgba(44, 42, 42, 1.0);
     transform: scale(1.0);
     transition: transform .9s;
 }
@@ -111,7 +238,7 @@ main{
     justify-content: space-around;
     flex-wrap: wrap;
     margin-top: 20px;
-    margin-left: 230px;
+    margin-left: 220px;
     
 }
 
