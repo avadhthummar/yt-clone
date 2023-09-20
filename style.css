@@ -30,8 +30,6 @@ header{
     margin-right: 10px;
 }
 
-
-
 .menu_logo{
     display: flex;
     align-items: center;
@@ -181,24 +179,51 @@ header{
     border-radius: 50%;
 }
 
-
-
 .nav-sidebar{
     display: block;
     position: fixed;
     background-color: black;
     height: 100%;
 }
+.nav-link {
+    display: flex;
+    align-items: center;
+    padding: 12px 5px;
+    margin-left: 17px;
+    width: 100%;
+  }
+  
+.nav-link :first-child{
+    padding-left: 0;
+    font-size: 24px;
+  }
+ .nav-link span {
+    padding-left: 18px;
+    padding-top: 0;
+    color: rgb(216, 214, 214); 
+}
+
+.nav-link :last-child{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+  
+ .nav-link:hover {
+    background-color:rgb(66, 63, 63);
+    cursor: pointer;
+    border-radius: 10px;
+  }
+
 .nav{
     margin-left: 230px;
+    margin-top: 60px;
 }
 
 .nav ul{
     display: flex;
     list-style-type: none;
-    margin-top: 10px;
     padding: 0;
-    overflow: hidden;
 }
 
 .nav-option{
@@ -219,38 +244,14 @@ header{
     transition: transform .9s;
 }
 
-header li {
-    float: left;
-}
-
-
 main{
-    display: flex;
-    margin-top: 90px;
 }
-.nav-link {
-    display: flex;
-    align-items: center;
-    padding: 12px 25px;
-    margin: 15px;
-  }
-  
- .nav-link span {
-    margin-left: 15px;
-    color: rgb(216, 214, 214);
-  }
-  
- .nav-link:hover {
-    background-color:rgb(66, 63, 63);
-    cursor: pointer;
-    border-radius: 10px;
-  }
 .video-page{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-left: 220px;
     
 }
